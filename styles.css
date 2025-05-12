@@ -1,0 +1,364 @@
+/* Sticky Notes Extension Styles */
+#sticky-notes-add-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+#sticky-notes-add-btn:hover {
+  background-color: #45a049;
+}
+
+.sticky-note {
+  position: fixed;
+  width: 250px;
+  background-color: #ffffa0;
+  border: 1px solid #e0e0c0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+.sticky-note-header {
+  background-color: #f0f0c0;
+  padding: 5px;
+  cursor: move;
+  display: flex;
+  justify-content: flex-end;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.sticky-note-close {
+  color: #888;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.sticky-note-close:hover {
+  color: #000;
+}
+
+.sticky-note-content {
+  width: 100%;
+  min-height: 150px;
+  border: none;
+  resize: vertical;
+  background-color: #ffffa0;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+.popup-container {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.instructions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.instructions li {
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* Sticky Notes Extension Styles */
+#sticky-notes-add-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+#sticky-notes-add-btn:hover {
+  background-color: #45a049;
+}
+
+.sticky-note {
+  position: fixed;
+  width: 250px;
+  background-color: #ffffa0;
+  border: 1px solid #e0e0c0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+.sticky-note-header {
+  background-color: #f0f0c0;
+  padding: 5px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.sticky-note-color-picker {
+  display: flex;
+  gap: 3px;
+}
+
+.sticky-note-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.sticky-note-close {
+  color: #888;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.sticky-note-close:hover {
+  color: #000;
+}
+
+.sticky-note-content {
+  width: 100%;
+  min-height: 150px;
+  border: none;
+  resize: vertical;
+  background-color: #ffffa0;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+.popup-container {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+}
+
+.instructions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.instructions li {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.inventory-list {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.inventory-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.inventory-note-content {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.inventory-note-content p {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+}
+
+.inventory-note-content small {
+  display: block;
+  color: #888;
+  font-size: 12px;
+}
+
+.inventory-note-actions {
+  display: flex;
+  align-items: center;
+}
+
+.restore-note {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restore-note:hover {
+  background-color: #45a049;
+}
+
+.delete-note {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+.delete-note:hover {
+  background-color: #d32f2f;
+}
+
+#clear-inventory {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#clear-inventory:hover {
+  background-color: #d32f2f;
+}
+
+.popup-tabs {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.popup-tab {
+  padding: 8px 15px;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+}
+
+.popup-tab.active {
+  border-bottom: 2px solid #4CAF50;
+  font-weight: bold;
+}
+
+.popup-tab-content {
+  display: none;
+}
+
+.popup-tab-content.active {
+  display: block;
+}
+
+.color-yellow { background-color: #ffffa0; }
+.color-pink { background-color: #ffb6c1; }
+.color-blue { background-color: #add8e6; }
+.color-green { background-color: #98fb98; }
+.color-purple { background-color: #e6e6fa; }
+
+/* Add this to the existing styles.css */
+#inventory-search {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#inventory-instructions {
+  margin-bottom: 10px;
+}
+
+.import-export-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.import-export-actions button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 14px;
+}
+
+#export-notes {
+  background-color: #2196F3;
+  color: white;
+}
+
+#export-notes:hover {
+  background-color: #0b7dda;
+}
+
+#import-notes {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#import-notes:hover {
+  background-color: #45a049;
+}
+
+.status-message {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  display: none;
+}
+
+.status-message.success {
+  display: block;
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.status-message.error {
+  display: block;
+  background-color: #f2dede;
+  color: #a94442;
+}

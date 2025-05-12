@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sticky Notes</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1>Sticky Notes</h1>
+    
+    <div class="popup-tabs">
+      <div class="popup-tab active" data-tab="instructions">Instructions</div>
+      <div class="popup-tab" data-tab="inventory">Note Inventory</div>
+    </div>
+    
+    <div class="popup-tab-content active" id="instructions-tab">
+      <p>This extension allows you to add sticky notes to any web page.</p>
+      <div class="instructions">
+        <h3>How to Use:</h3>
+        <ul>
+          <li>Click the "+" button on any webpage to add a new note</li>
+          <li>Drag the note header to move it around</li>
+          <li>Click the "×" to hide a note (it will be saved in inventory)</li>
+          <li>Change note color by clicking the color dots in the header</li>
+          <li>Notes are automatically saved per webpage</li>
+          <li>Import/Export your notes using the buttons below</li>
+        </ul>
+      </div>
+      <div class="import-export-actions">
+        <button id="export-notes">Export All Notes</button>
+        <button id="import-notes">Import Notes</button>
+        <input type="file" id="import-file" accept=".json" style="display: none;">
+        <div id="import-status" class="status-message"></div>
+      </div>
+    </div>
+    
+    <div class="popup-tab-content" id="inventory-tab">
+      <div id="inventory-instructions">
+        <p>Your hidden notes are saved here. You can restore or permanently delete them.</p>
+        <input type="text" id="inventory-search" placeholder="Search notes..." />
+      </div>
+      <div class="inventory-list" id="inventory-list">
+        <!-- Notes will be populated here by JavaScript -->
+      </div>
+      <div class="inventory-actions">
+        <button id="clear-inventory">Clear All</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

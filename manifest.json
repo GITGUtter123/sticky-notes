@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Sticky Notes Everywhere",
+  "version": "1.0",
+  "description": "Add digital sticky notes to any web page",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
